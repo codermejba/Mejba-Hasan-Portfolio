@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary:#111418;
+    --color-secondary:#20c997;
+    --font-color:#fafafae6;
+    --font-primary:'Poppins', sans-serif;
+    --color-white:#FFFFFF;
+    --color-black:#000;
+    --color-grey0:#f8f8f8;
+    --color-grey1:#dbe1e8;
+    --color-grey2:#b2becd;
+    --color-grey3:#6c7983;
+    --color-grey4:#454e56;
+    --color-grey5:#2a2e35;
+    --color-grey6:#12181b;
+    --color-bg1:#343a40;
+    --color-bg2:#191d2b;
+    --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+
+/* reset body for bootstrap */
+body{
+    font-family: var(--font-primary) !important;
+    margin: unset !important;
+    font-size: unset !important;
+    font-weight: unset !important;
+    line-height: unset !important;
+    color:unset !important;
+    text-align: unset !important;
+    background-color: unset !important;
+    -webkit-text-size-adjust: unset !important;
+    -webkit-tap-highlight-color:unset !important;
+}
+/* reset button */
+button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--font-primary) !important;
+}
+
+/* navbar */
+a,li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+/* text color */
+
+
+.text-light {
+    color: #dee3e4 !important;
+}
+
+
+
+
+
+/* Text Size */
+.text-5 {
+    font-size: 21px !important;
+    font-size: 1.3125rem !important;
+}
+
+.text-7 {
+    font-size: 28px !important;
+    font-size: 1.75rem !important;
+}
+
+.text-16 {
+    font-size: 4rem !important;
+}
+
+
