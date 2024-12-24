@@ -5,12 +5,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
 }
 :root{
+    --font-primary:'Poppins', sans-serif;
+
+    /* colors */
     --color-primary:#111418;
     --color-secondary:#20c997;
     --font-color:#fafafae6;
-    --font-primary:'Poppins', sans-serif;
+    --logo-color: #aab1b8;
     --color-white:#FFFFFF;
     --color-black:#000;
     --color-grey0:#f8f8f8;
@@ -25,7 +30,13 @@
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+  /* Highlighting active section */
+nav ul li a:target{
+  color: #ff6f61;
+}
 /* reset body for bootstrap */
 body{
     font-family: var(--font-primary) !important;
@@ -48,6 +59,22 @@ button{
     font-family: var(--font-primary) !important;
 }
 
+/* list style */
+.list-style-2{
+    padding: 0 ;
+}
+
+.list-style-2>li {
+    border-bottom: 1px solid #eaeaea;
+    list-style-type: none;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.list-style-2.list-style-light>li {
+    border-bottom: 1px solid hsla(0, 0%, 98%, .12);
+}
+
 /* navbar */
 a,li{
     list-style: none;
@@ -63,7 +90,9 @@ a,li{
 .text-light {
     color: #dee3e4 !important;
 }
-
+.text-primary{
+    color: var(--color-secondary) !important;
+}
 
 
 
@@ -78,9 +107,16 @@ a,li{
     font-size: 28px !important;
     font-size: 1.75rem !important;
 }
-
+.text-9 {
+    font-size: 36px !important;
+    font-size: 2.25rem !important;
+}
 .text-16 {
     font-size: 4rem !important;
 }
-
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
 
