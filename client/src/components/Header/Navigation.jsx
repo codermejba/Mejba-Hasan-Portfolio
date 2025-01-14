@@ -50,10 +50,10 @@ const Navigation = () => {
           </a>
         </div>
       </Main>
-      <MobNav>
+      <MobNav className=" position-fixed">
         <div className=" h-100 d-flex justify-content-between align-items-center">
-          <div className="brand ">
-            <h4>Mejba Hasan</h4>
+          <div className="brand">
+            <h4 className=" text-white">Mejba Hasan</h4>
           </div>
           <div className="MobSocialIcons d-block">
             <a href="#">
@@ -131,8 +131,10 @@ const Main = styled.header`
 `;
 const MobNav = styled.header`
   height: 60px;
+  width: 100%;
   padding: 5px 15px;
   background: black;
+  z-index: 999;
   h4 {
     color: var(--color-secondary);
     white-space: nowrap;

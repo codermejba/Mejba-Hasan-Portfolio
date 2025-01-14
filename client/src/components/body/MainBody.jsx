@@ -16,6 +16,7 @@ const MainBody = () => {
 const Mian=styled.div`
     max-width: 100vw;
     height: 100vh;
+    
     @media (min-width: 992px) {
       margin-left: 250px !important;
     }
