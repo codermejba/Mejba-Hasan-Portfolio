@@ -37,30 +37,7 @@ const slide = keyframes`
 const Main = styled.div`
   height: 100vh;
   color: var(--color-white) !important;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("./img/mejba-hasan-hero.jpg") center center/cover;
-    z-index: -1;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    //background: rgba(0,0,0,0.6);
-    background: var(--color-primary);
-    opacity: 0.5;
-    z-index: -1;
-  }
+  
 
   .content {
     position: absolute;
