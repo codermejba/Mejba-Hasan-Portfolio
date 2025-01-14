@@ -13,7 +13,7 @@ const Hero = () => {
       </div>
       <a className="view-content" href="#about">
         {/* adding scroll animation and it will rout to about me page*/}
-        <span>
+        <span >
           <i className="fa fa-chevron-down"></i>
         </span>
       </a>
