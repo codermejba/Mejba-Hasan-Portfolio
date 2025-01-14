@@ -9,7 +9,7 @@ const Hero = () => {
         <h4 className="text-7 fw-medium">Welcome</h4>
         <h1 className=" fw-semibold text-16 py-lg-2">I am Mejba Hasan</h1>
         <h4 className="text-light text-5">based in Los Angeles, California.</h4>
-        <Button className=" mt-lg-3">Hire Me</Button>
+        <Button className=" mt-4">Hire Me</Button>
       </div>
       <a className="view-content" href="#about">
         {/* adding scroll animation and it will rout to about me page*/}
