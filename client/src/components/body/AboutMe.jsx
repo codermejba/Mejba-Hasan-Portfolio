@@ -22,7 +22,7 @@ const AboutMe = () => {
     },
   ];
   return (
-    <Main id="about">
+    <Main id="about" className="secPadding">
       <div className="container">
         <div className="title mb-5">
           <h1 className="aboutTitle fw-600 text-uppercase text-center prevent-select">
@@ -92,27 +92,8 @@ const AboutMe = () => {
   );
 };
 const Main = styled.section`
-  padding: 4.5rem 0;
-  min-height: 100vh;
   background-color: #212529 !important;
-  .title {
-    position: relative;
-    .aboutTitle {
-      font-size: calc(1.95rem + 8.4vw) !important;
-      line-height: 1;
-      opacity: 0.1;
-      color: #6c757d !important;
-    }
-    p {
-      span {
-        width: 82px;
-        display: block;
-        background-color: var(--color-secondary);
-        height: 2px;
-        margin: 0 auto;
-      }
-    }
-  }
+
   .content {
     .contentLeft {
       p {

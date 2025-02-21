@@ -18,7 +18,7 @@ const Navigation = () => {
                 <a href="#about">About Me</a>
               </li>
               <li>
-                <a href="#">What I Do</a>
+                <a href="#services">What I Do</a>
               </li>
               <li>
                 <a href="#">Resume</a>

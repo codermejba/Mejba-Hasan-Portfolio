@@ -2,12 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import Hero from './Hero'
 import AboutMe from './AboutMe'
+import Services from './Services'
 
 const MainBody = () => {
   return (
     <Mian className=''>
       <Hero/>
       <AboutMe/>
+      <Services/>
     </Mian>
   )
 }

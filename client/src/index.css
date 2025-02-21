@@ -121,4 +121,28 @@ a,li{
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
   }
-
+/* every section applyed */
+/* title */
+.title {
+    position: relative;
+    .aboutTitle {
+      font-size: calc(1.95rem + 8.4vw) !important;
+      line-height: 1;
+      opacity: 0.1;
+      color: #6c757d !important;
+    }
+    p {
+      span {
+        width: 82px;
+        display: block;
+        background-color: var(--color-secondary);
+        height: 2px;
+        margin: 0 auto;
+      }
+    }
+  }
+/* section padding */
+.secPadding {
+  padding: 4.5rem 0;
+}
+  
