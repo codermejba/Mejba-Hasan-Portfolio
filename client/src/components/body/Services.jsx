@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Services = () => {
   return (
-    <Main id="services" className="secPadding">
+    <Main id="services" className="secPadding bg-secondary">
       <div className="container">
         <div className="title mb-5">
           <h1 className="aboutTitle fw-600 text-uppercase text-center prevent-select">
@@ -104,7 +104,7 @@ const Services = () => {
 };
 
 const Main = styled.div`
-  background-color: #343a40 !important;
+  
   i {
     color: var(--color-secondary);
     font-size: 30px;

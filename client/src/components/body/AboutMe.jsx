@@ -22,8 +22,8 @@ const AboutMe = () => {
     },
   ];
   return (
-    <Main id="about" className="secPadding">
-      <div className="container">
+    <Main id="about" className="secPadding bg-primary">
+      <div className="container px-lg-5">
         <div className="title mb-5">
           <h1 className="aboutTitle fw-600 text-uppercase text-center prevent-select">
             About Me
@@ -92,7 +92,6 @@ const AboutMe = () => {
   );
 };
 const Main = styled.section`
-  background-color: #212529 !important;
 
   .content {
     .contentLeft {

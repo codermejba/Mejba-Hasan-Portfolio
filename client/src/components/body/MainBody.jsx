@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Hero from './Hero'
 import AboutMe from './AboutMe'
 import Services from './Services'
+import Resume from './Resume'
 
 const MainBody = () => {
   return (
@@ -10,6 +11,7 @@ const MainBody = () => {
       <Hero/>
       <AboutMe/>
       <Services/>
+      <Resume/>
     </Mian>
   )
 }
