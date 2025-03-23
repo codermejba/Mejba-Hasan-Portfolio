@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Resume = () => {
   return (
     <Main className="secPadding bg-primary">
-      <div className="container px-lg-5">
+      <div className="container">
         <div className="title mb-5">
           <h1 className="aboutTitle fw-600 text-uppercase text-center prevent-select">
             Summary
@@ -17,7 +17,7 @@ const Resume = () => {
             <span></span>
           </p>
         </div>
-        <div className="row gx-5">
+        <div className="row gx-lg-5">
           <div className="col-md-6">
             <h2  className="text-6 fw-600 mb-4 text-white">My Education</h2>
             <div  className="bg-white  rounded p-4 mb-4 bg-dark">
