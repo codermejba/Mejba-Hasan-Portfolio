@@ -23,7 +23,7 @@ const AboutMe = () => {
   ];
   return (
     <Main id="about" className="secPadding bg-primary">
-      <div className="container">
+      <div className="container px-lg-5">
         <div className="title mb-5">
           <h1 className="aboutTitle fw-600 text-uppercase text-center prevent-select">
             About Me
@@ -35,7 +35,7 @@ const AboutMe = () => {
             Know Me More
             <span className=""></span>
           </p>
-        </div>
+        </div> 
         <div className="content row">
           <div className="contentLeft col-lg-7 col-xl-8 text-center text-lg-start">
             <h2 className="text-7 fw-600 mb-3 text-white">

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Resume = () => {
   return (
     <Main className="secPadding bg-primary">
-      <div className="container">
+      <div className="container px-lg-5">
         <div className="title mb-5">
           <h1 className="aboutTitle fw-600 text-uppercase text-center prevent-select">
             Summary
