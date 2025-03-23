@@ -7,6 +7,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: all 0.5s;
+    --bs-progress-bar-bg: var(--color-secondary);
+    --bs-progress-height: .5rem !important;
+
 }
 :root{
     --font-primary:'Poppins', sans-serif;
