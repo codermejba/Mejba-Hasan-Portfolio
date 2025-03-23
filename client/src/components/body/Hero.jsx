@@ -34,7 +34,7 @@ const slide = keyframes`
   }
   
 `;
-const Main = styled.div`
+const Main = styled.section`
   height: 100vh;
   color: var(--color-white) !important;
   

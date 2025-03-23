@@ -103,7 +103,7 @@ const Services = () => {
   );
 };
 
-const Main = styled.div`
+const Main = styled.section`
   
   i {
     color: var(--color-secondary);

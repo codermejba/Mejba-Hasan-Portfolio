@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "../../assets/Button";
 
 const Resume = () => {
   return (
-    <Main className="secPadding bg-primary">
+    <Main id="resume" className="secPadding bg-primary">
       <div className="container px-lg-5">
         <div className="title mb-5">
           <h1 className="aboutTitle fw-600 text-uppercase text-center prevent-select">
@@ -177,20 +178,16 @@ const Resume = () => {
         </div>
         {/* CV */}
         <div  className="text-center mt-5">
-          <a
-             className="btn btn-outline-secondary rounded-pill shadow-none"
-            href="/demo/react/simone/demo/static/media/resume.c84e759e31a37c0be66e.pdf"
-            download=""
-          >
+          <Button>
             Download CV
             <span  className="ms-1">
               <i  className="fas fa-download"></i>
             </span>
-          </a>
+          </Button>
         </div>
       </div>
     </Main>
   );
 };
-const Main = styled.div``;
+const Main = styled.section``;
 export default Resume;

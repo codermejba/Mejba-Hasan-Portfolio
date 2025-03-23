@@ -4,6 +4,7 @@ import Hero from './Hero'
 import AboutMe from './AboutMe'
 import Services from './Services'
 import Resume from './Resume'
+import Contact from './Contact'
 
 const MainBody = () => {
   return (
@@ -12,6 +13,7 @@ const MainBody = () => {
       <AboutMe/>
       <Services/>
       <Resume/>
+      <Contact  />
     </Mian>
   )
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import SocialIcons from "../../assets/SocialIcons";
 const Navigation = () => {
   return (
     <>
@@ -21,7 +22,7 @@ const Navigation = () => {
                 <a href="#services">What I Do</a>
               </li>
               <li>
-                <a href="#">Resume</a>
+                <a href="#resume">Resume</a>
               </li>
               <li>
                 <a href="#">Portfolio</a>
@@ -35,20 +36,7 @@ const Navigation = () => {
             </ul>
           </nav>
         </div>
-        <div className="socialIcons">
-          <a href="#">
-            <i className="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-github"></i>
-          </a>
-        </div>
+        <SocialIcons  />
       </Main>
       <MobNav className=" position-fixed">
         <div className=" h-100 d-flex justify-content-between align-items-center">
