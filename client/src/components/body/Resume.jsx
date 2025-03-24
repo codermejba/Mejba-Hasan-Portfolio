@@ -18,8 +18,8 @@ const Resume = () => {
             <span></span>
           </p>
         </div>
-        <div className="row gx-lg-5">
-            {/* Education */}
+        {/* <div className="row gx-lg-5">
+         
           <div className="col-md-6">
             <h2 className="text-6 fw-600 mb-4 text-white">My Education</h2>
             <div className="bg-white  rounded p-4 mb-4 bg-dark">
@@ -50,7 +50,6 @@ const Resume = () => {
               </p>
             </div>
           </div>
-          {/* Experience */}
           <div className="col-md-6">
             <h2 className="text-6 fw-600 mb-4 text-white">My Experience</h2>
             <div className="bg-white  rounded p-4 mb-4 bg-dark">
@@ -81,22 +80,22 @@ const Resume = () => {
               </p>
             </div>
           </div>
-        </div>
-        {/* skills */}
-        <h2  className="text-6 fw-600 mt-4 mb-4 text-white">My Skills</h2>
+        </div> */}
+        {/*skills */}
+        <h2 className="text-6 fw-600 mt-4 mb-4 text-white">My Skills</h2>
         <div className="row gx-lg-5">
           <div className="col-md-6">
             <p className=" fw-500 text-start mb-2 text-light">
-              Web Design <span className="float-end">65%</span>
+              Web Design <span className="float-end">85%</span>
             </p>
             <div className="progress progress-sm mb-4 bg-dark">
               <div
                 className="progress-bar"
                 role="progressbar"
-                aria-valuenow="65"
+                aria-valuenow="85"
                 aria-valuemin="0"
                 aria-valuemax="100"
-                style={{ width: "65%" }}
+                style={{ width: "85%" }}
               ></div>
             </div>
           </div>
@@ -147,16 +146,16 @@ const Resume = () => {
           </div>
           <div className="col-md-6">
             <p className=" fw-500 text-start mb-2 text-light">
-              Angular Js <span className="float-end">60%</span>
+              Angular Js <span className="float-end">10%</span>
             </p>
             <div className="progress progress-sm mb-4 bg-dark">
               <div
                 className="progress-bar"
                 role="progressbar"
-                aria-valuenow="60"
+                aria-valuenow="10"
                 aria-valuemin="0"
                 aria-valuemax="100"
-                style={{ width: "60%" }}
+                style={{ width: "10%" }}
               ></div>
             </div>
           </div>
@@ -177,11 +176,11 @@ const Resume = () => {
           </div>
         </div>
         {/* CV */}
-        <div  className="text-center mt-5">
+        <div className="text-center mt-5">
           <Button>
             Download CV
-            <span  className="ms-1">
-              <i  className="fas fa-download"></i>
+            <span className="ms-1">
+              <i className="fas fa-download"></i>
             </span>
           </Button>
         </div>

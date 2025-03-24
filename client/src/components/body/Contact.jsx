@@ -4,7 +4,7 @@ import Button from "../../assets/Button";
 
 const Contact = () => {
   return (
-    <Main className="secPadding bg-secondary">
+    <Main id="contact" className="secPadding bg-secondary">
       <div className="container px-lg-5">
         {/*  title */}
         <div className="title mb-5">
@@ -24,25 +24,25 @@ const Contact = () => {
           <div className="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
             <h2 className="mb-3 text-5 text-uppercase text-white">Address</h2>
             <p className="text-3 mb-4 text-light">
-              4th Floor, Plot No.22, 145 Murphy Canyon Rd. San Diego CA 2028
+              Mohammadpur, Dhaka, Bangladesh
             </p>
             <p className="text-3 mb-1 text-light">
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-phone"></i>
               </span>
-              (060) 444 434 444
+              +880 1767397345
             </p>
             <p className="text-3 mb-1 text-light">
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-fax"></i>
               </span>
-              (060) 555 545 555
+              (XXX) XXX XXX XXX
             </p>
             <p className="text-3 mb-4 text-light">
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-envelope"></i>
               </span>
-              chat@simone.com
+              mail.mejbahasan@gmail.com
             </p>
             <h2 className="mb-3 text-5 text-uppercase text-white">Follow Me</h2>
             <div className=" d-flex justify-content-center justify-content-md-start">
@@ -68,7 +68,7 @@ const Contact = () => {
                     className="form-control"
                     required=""
                     placeholder="Name"
-                    spellcheck="false"
+                    spellCheck="false"
                   />
                 </div>
                 <div className="col-xl-6">
@@ -78,7 +78,7 @@ const Contact = () => {
                     className="form-control"
                     required=""
                     placeholder="Email"
-                    spellcheck="false"
+                    spellCheck="false"
                   />
                 </div>
                 <div className="col">

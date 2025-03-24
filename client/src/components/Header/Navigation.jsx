@@ -24,14 +24,14 @@ const Navigation = () => {
               <li>
                 <a href="#resume">Resume</a>
               </li>
-              <li>
+ {/*              <li>
                 <a href="#">Portfolio</a>
               </li>
               <li>
                 <a href="#">Testimonial</a>
-              </li>
+              </li> */}
               <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav>

@@ -5,6 +5,7 @@ import AboutMe from './AboutMe'
 import Services from './Services'
 import Resume from './Resume'
 import Contact from './Contact'
+import Footer from './Footer'
 
 const MainBody = () => {
   return (
@@ -14,6 +15,7 @@ const MainBody = () => {
       <Services/>
       <Resume/>
       <Contact  />
+      <Footer/>
     </Mian>
   )
 }
