@@ -1,8 +1,27 @@
 import styled from "styled-components";
 import SocialIcons from "../../assets/SocialIcons";
 import Button from "../../assets/Button";
+import { useForm } from "react-hook-form";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../../firebase";
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit =async (data) => {
+    console.log(data);
+    try {
+      await addDoc(collection(db, "ClientsMessage"), data);
+      console.log("Message Sent");
+      alert("Message Sent Successfully");
+    } catch (error) {
+      console.log(error);
+      alert(error.message);
+    }
+  };
   return (
     <Main id="contact" className="secPadding bg-secondary">
       <div className="container px-lg-5">
@@ -57,8 +76,7 @@ const Contact = () => {
             <form
               className="form-dark"
               id="contact-form"
-              action="php/mail.php"
-              method="post"
+              onSubmit={handleSubmit(onSubmit)}
             >
               <div className="row g-4">
                 <div className="col-xl-6">
@@ -69,7 +87,11 @@ const Contact = () => {
                     required=""
                     placeholder="Name"
                     spellCheck="false"
+                    {...register("name", { required: "Enter your name" })}
                   />
+                  {errors.name && (
+                    <p className="text-danger mb-0">{errors.name.message}</p>
+                  )}
                 </div>
                 <div className="col-xl-6">
                   <input
@@ -79,7 +101,18 @@ const Contact = () => {
                     required=""
                     placeholder="Email"
                     spellCheck="false"
+                    {...register("email", {
+                      required: "Email is required",
+                      pattern: {
+                        value: /^[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com|outlook\.com|hotmail\.com|live\.com)$/,
+                        message:
+                          "Enter a valid email address",
+                      },
+                    })}
                   />
+                  {errors.email && (
+                    <p className="text-danger mb-0">{errors.email.message}</p>
+                  )}
                 </div>
                 <div className="col">
                   <textarea
@@ -88,11 +121,18 @@ const Contact = () => {
                     rows="5"
                     required=""
                     placeholder="Tell us more about your needs........"
-                  ></textarea>
+                    spellCheck="false"
+                    {...register("message", { required: "Write a message" })}
+                  />
+                  {errors.message && (
+                    <p className="text-danger mb-0">
+                      {errors.message.message}
+                    </p>
+                  )}
                 </div>
               </div>
               <p className="text-center mt-4 mb-0">
-                <Button>Send Message</Button>
+                <Button type="submit">Send Message</Button>
               </p>
             </form>
           </div>
@@ -102,7 +142,6 @@ const Contact = () => {
   );
 };
 const Main = styled.section`
-
   .socialIcons {
     display: flex;
     gap: 1rem;
