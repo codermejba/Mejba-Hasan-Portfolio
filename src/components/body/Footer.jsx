@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <Main id="footer" className="secPadding bg-primary">
+    <Main id="footer" className="secPadding bg-secondary">
       <div className="container px-lg-5 text-light">
         <div className="row">
           <div className="col-lg-6 text-center text-lg-start">

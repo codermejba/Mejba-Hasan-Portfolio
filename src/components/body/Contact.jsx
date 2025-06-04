@@ -23,7 +23,7 @@ const Contact = () => {
     }
   };
   return (
-    <Main id="contact" className="secPadding bg-secondary">
+    <Main id="contact" className="secPadding bg-primary">
       <div className="container px-lg-5">
         {/*  title */}
         <div className="title mb-5">

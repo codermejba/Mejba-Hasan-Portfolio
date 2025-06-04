@@ -4,7 +4,7 @@ import Button from "../../assets/Button";
 
 const Resume = () => {
   return (
-    <Main id="resume" className="secPadding bg-primary">
+    <Main id="resume" className="secPadding bg-secondary">
       <div className="container px-lg-5">
         <div className="title mb-5">
           <h1 className="aboutTitle fw-600 text-uppercase text-center prevent-select">

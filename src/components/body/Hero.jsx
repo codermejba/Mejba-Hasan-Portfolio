@@ -7,7 +7,7 @@ const Hero = () => {
   const [arryindex, setarryindex] = useState(0);
 
   useEffect(() => {
-    const text = ["Mejba Hasan", "A Frontend Developer", "A Backend Developer"];
+    const text = ["Mejba Hasan", "A React Developer","A Full Stack Developer", "A MERN Developer"];
     let i = -1;
 
     const typeInterval = setInterval(() => {
@@ -45,7 +45,7 @@ const Hero = () => {
       <div className="content">
         <h4 className="text-7 fw-medium mb-3">Welcome</h4>
         <h1 className=" fw-semibold text-16">I am <span className="text-primary">{typing}</span></h1>
-        <h4 className="text-light text-5">Live in Dhaka, Bangladesh.</h4>
+        <h4 className="text-light text-5 mt-3">Live in Dhaka, Bangladesh.</h4>
         <Button className=" mt-4"><a href="#contact">Hire Me</a></Button>
       </div>
       <a className="view-content" href="#about">
