@@ -19,7 +19,7 @@ const Projects = () => {
         </div>
         <div className="projects">
           <div className=" container">
-            <div className=" row gap-3 align-items-center justify-content-center">
+            <div className=" row gap-5 gap-md-3 align-items-center justify-content-center">
               <div className=" col-lg-5 p-0 slider">
                 <img
                   src="projects/hotel-booking-desktop-view.png"
