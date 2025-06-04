@@ -1,9 +1,9 @@
-import React from "react";
+import Button from "../../assets/Button"
 import styled from "styled-components";
 
 const Projects = () => {
   return (
-    <Main id="services" className="secPadding bg-primary">
+    <Main id="projects" className="secPadding bg-primary">
       <div className="container">
         <div className="title mb-5">
           <h1 className="aboutTitle fw-600 text-uppercase text-center prevent-select">
@@ -18,25 +18,43 @@ const Projects = () => {
           </p>
         </div>
         <div className="projects">
-          <div className="">
-            <div className=" row">
-              <div className=" col-lg-6 p-0 slider">
+          <div className=" container">
+            <div className=" row gap-3 align-items-center justify-content-center">
+              <div className=" col-lg-5 p-0 slider">
                 <img
-                  src="projects/realstate/realstate-desktop-view.PNG"
+                  src="projects/hotel-booking-desktop-view.png"
                   alt="desktop"
                   className="img-fluid"
                 />
-                <div className=" d-flex align-items-center justify-content-center  text-light">
-                  <a 
-                  href="https://realestate-copy.vercel.app/"
-                  target="_blank" // <-- Opens in a new tab
-                  rel="noopener noreferrer" // <-- Security best practice for target="_blank"
+                <div className="overlay d-flex align-items-center justify-content-center  text-light">
+                  <a
+                    href="https://hotel-booking-mejba-hasans-projects.vercel.app/"
+                    target="_blank" // <-- Opens in a new tab
+                    rel="noopener noreferrer" // <-- Security best practice for target="_blank"
                   >
-                   
                     Live Preview
                   </a>
                 </div>
               </div>
+              <div className=" col-lg-5 p-0 slider">
+                <img
+                  src="projects/realstate-desktop-view.PNG"
+                  alt="desktop"
+                  className="img-fluid"
+                />
+                <div className="overlay d-flex align-items-center justify-content-center  text-light">
+                  <a
+                    href="https://realestate-copy-mejba-hasans-projects.vercel.app/"
+                    target="_blank" // <-- Opens in a new tab
+                    rel="noopener noreferrer" // <-- Security best practice for target="_blank"
+                  >
+                    Live Preview
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="d-flex justify-content-center mt-5 pt-5">
+              <Button>See More</Button>
             </div>
           </div>
         </div>
@@ -46,11 +64,11 @@ const Projects = () => {
 };
 const Main = styled.section`
   .slider {
-    height:300px;
+    height: 250px;
     overflow: hidden;
     position: relative;
 
-    div {
+    .overlay {
       position: absolute;
       top: 0;
       left: 0;
@@ -65,12 +83,16 @@ const Main = styled.section`
     img {
       transition: transform 1.5s linear;
       transform: translateY(0%);
-      display: block;
     }
     a {
+      font-weight: 700;
+      padding: 10px 20px;
+      border: 1px solid var(--color-white);
+
       &:hover {
         cursor: pointer;
         color: var(--color-secondary);
+        border: 1px solid var(--color-secondary);
       }
     }
     &:hover {
@@ -80,7 +102,7 @@ const Main = styled.section`
         transform: translateY(-81%);
       }
 
-      div {
+      .overlay {
         opacity: 1;
         pointer-events: auto;
       }
