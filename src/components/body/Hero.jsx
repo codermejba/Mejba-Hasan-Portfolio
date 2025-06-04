@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="content">
         <h4 className="text-7 fw-medium">Welcome</h4>
         <h1 className=" fw-semibold text-16 py-lg-2">I am Mejba Hasan</h1>
-        <h4 className="text-light text-5">based in Dhaka, Bangladesh.</h4>
+        <h4 className="text-light text-5">Live in Dhaka, Bangladesh.</h4>
         <Button className=" mt-4"><a href="#contact">Hire Me</a></Button>
       </div>
       <a className="view-content" href="#about">
