@@ -43,14 +43,24 @@ const AboutMe = () => {
               Developer
             </h2>
             <p className="text-white-50 ">
-              I am a passionate Web Developer skilled in HTML, CSS,
-              JavaScript, React, and Bootstrap. I enjoy building responsive and
-              interactive websites that enhance user experiences. Currently, I
-              am looking for an opportunity where I can apply my skills and grow
-              as a developer.
+              Hi, I'm MD. Mejba Hasan, a passionate Full-Stack Web Developer
+              based in Dhaka, Bangladesh. I specialize in building dynamic,
+              responsive, and user-friendly web applications using modern
+              technologies like HTML5, CSS3, JavaScript (ES6+), React.js,
+              Node.js, Express.js, MongoDB, and more. I enjoy turning complex
+              problems into clean, efficient solutions—whether it’s on the
+              frontend or the backend. From designing beautiful user interfaces
+              with React and Tailwind CSS to creating powerful RESTful APIs with
+              Node.js and MongoDB, I love building full-stack applications that
+              not only look good but also perform well. Currently, I'm looking
+              for an opportunity to apply my skills in a professional setting,
+              collaborate with a team, and continue growing as a developer. 
             </p>
             <p className="text-white-50">
-            I help you build brand for your business at an affordable price.
+              I
+              also offer affordable web solutions for businesses looking to
+              build their online presence—helping you establish your brand and
+              reach your audience effectively.
             </p>
           </div>
           <div className="contentRight col-lg-6 col-xl-5">
@@ -60,20 +70,22 @@ const AboutMe = () => {
                   <span className="fw-600 me-2">Name : </span>Mejba Hasan
                 </li>
                 <li>
-                  <span className="fw-600 me-2">Email : </span>mail.mejbahasan@gmail.com
+                  <span className="fw-600 me-2">Email : </span>
+                  mail.mejbahasan@gmail.com
                 </li>
                 <li>
-                  <span className="fw-600 me-2">Age : </span>25
+                  <span className="fw-600 me-2">Age : </span>24
                 </li>
                 <li>
-                  <span className="fw-600 me-2">From : </span>Dhaka,
-                  Bangladesh
+                  <span className="fw-600 me-2">From : </span>Dhaka, Bangladesh
                 </li>
               </ul>
-         <a href="./cv/MD-MEJBA-HASAN-CV.pdf" download="MD. MEJBA HASAN - CV.pdf">
-              <Button className="mt-3">Download CV</Button>
-
-</a>
+              <a
+                href="./cv/MD-MEJBA-HASAN-CV.pdf"
+                download="MD. MEJBA HASAN - CV.pdf"
+              >
+                <Button className="mt-3">Download CV</Button>
+              </a>
             </div>
           </div>
         </div>
