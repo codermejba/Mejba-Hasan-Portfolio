@@ -46,7 +46,7 @@ const Hero = () => {
         <h4 className="text-7 fw-medium mb-3">Welcome</h4>
         <h1 className=" fw-semibold text-16">I am <span className="text-primary">{typing}</span></h1>
         <h4 className="text-light text-5 mt-3">Live in Dhaka, Bangladesh.</h4>
-        <Button className=" mt-4"><a href="#contact">Hire Me</a></Button>
+        <a href="#contact"><Button className=" mt-4">Hire Me</Button></a>
       </div>
       <a className="view-content" href="#about">
         {/* adding scroll animation and it will rout to about me page*/}
