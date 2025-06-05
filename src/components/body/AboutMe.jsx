@@ -70,7 +70,10 @@ const AboutMe = () => {
                   Bangladesh
                 </li>
               </ul>
+         <a href="./cv/MD-MEJBA-HASAN-CV.pdf" download="MD. MEJBA HASAN - CV.pdf">
               <Button className="mt-3">Download CV</Button>
+
+</a>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
-import Button from "../../assets/Button"
+import { Link } from "react-router-dom";
+import Button from "../../assets/Button";
 import styled from "styled-components";
 
 const Projects = () => {
@@ -20,41 +21,80 @@ const Projects = () => {
         <div className="projects">
           <div className=" container">
             <div className=" row gap-5 gap-md-3 align-items-center justify-content-center">
-              <div className=" col-lg-5 p-0 slider">
-                <img
-                  src="projects/hotel-booking-desktop-view.png"
-                  alt="desktop"
-                  className="img-fluid"
-                />
-                <div className="overlay d-flex align-items-center justify-content-center  text-light">
+              <div className=" col-lg-5 p-0">
+                <div className=" slider">
+                  <img
+                    src="projects/hotel-booking-desktop-view.png"
+                    alt="desktop"
+                    className="img-fluid"
+                  />
+                  <div className="overlay d-flex align-items-center justify-content-center  text-light">
+                    <a
+                      href="https://hotel-booking-mejba-hasans-projects.vercel.app/"
+                      target="_blank" // <-- Opens in a new tab
+                      rel="noopener noreferrer" // <-- Security best practice for target="_blank"
+                    >
+                      Live Preview
+                    </a>
+                  </div>
+                </div>
+                <div className=" bg-light  d-flex justify-content-between">
+                  <Link
+                    to="/projects/hotel-booking"
+                    className="fw-700 text-dark p-3"
+                  >
+                    Hotel Booking
+                  </Link>
                   <a
                     href="https://hotel-booking-mejba-hasans-projects.vercel.app/"
                     target="_blank" // <-- Opens in a new tab
                     rel="noopener noreferrer" // <-- Security best practice for target="_blank"
+                    className="fw-700 text-dark p-3"
                   >
-                    Live Preview
+                    Live
                   </a>
                 </div>
               </div>
-              <div className=" col-lg-5 p-0 slider">
-                <img
-                  src="projects/realstate-desktop-view.PNG"
-                  alt="desktop"
-                  className="img-fluid"
-                />
-                <div className="overlay d-flex align-items-center justify-content-center  text-light">
+              <div className=" col-lg-5 p-0">
+                <div className=" slider">
+                  <img
+                    src="./projects/realstate-desktop-view.PNG"
+                    alt="desktop"
+                    className="img-fluid"
+                  />
+                  <div className="overlay d-flex align-items-center justify-content-center  text-light">
+                    <a
+                      href="https://realestate-copy-mejba-hasans-projects.vercel.app/"
+                      target="_blank" // <-- Opens in a new tab
+                      rel="noopener noreferrer" // <-- Security best practice for target="_blank"
+                    >
+                      Live Preview
+                    </a>
+                  </div>
+                </div>
+                <div className=" bg-light  d-flex justify-content-between">
+                  <Link
+                    to="/projects/realstate"
+                    className="fw-700 text-dark p-3"
+                  >
+                    Real Estate Service
+                  </Link>
                   <a
                     href="https://realestate-copy-mejba-hasans-projects.vercel.app/"
                     target="_blank" // <-- Opens in a new tab
                     rel="noopener noreferrer" // <-- Security best practice for target="_blank"
+                    className="fw-700 text-dark p-3"
+                    
                   >
-                    Live Preview
+                    Live
                   </a>
                 </div>
               </div>
             </div>
             <div className="d-flex justify-content-center mt-5 pt-5">
-              <Button>See More</Button>
+              <Link to="/projects">
+                <Button>See All Projects</Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -95,11 +135,12 @@ const Main = styled.section`
         border: 1px solid var(--color-secondary);
       }
     }
+    
     &:hover {
       img {
         cursor: pointer;
         transition: transform 10s linear;
-        transform: translateY(-81%);
+        transform: translateY(-88.5%);
       }
 
       .overlay {

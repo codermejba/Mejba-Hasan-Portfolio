@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import SocialIcons from "../../assets/SocialIcons";
+import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <>
       <Main className=" p-3 pb-2 d-lg-flex">
         <div className="brand mt-4">
+          <Link to="/">
           <img src="./img/mejba-hasan-logo.jpg" alt="Logo" className=" mb-2" />
-          <h4>Mejba Hasan</h4>
+            <h4>Mejba Hasan</h4>
+          </Link>
         </div>
         <div className="menu">
           <nav>
@@ -27,7 +30,7 @@ const Navigation = () => {
               <li>
                 <a href="#resume">Resume</a>
               </li>
- {/*              <li>
+              {/*              <li>
                 <a href="#">Portfolio</a>
               </li>
               <li>
@@ -39,7 +42,7 @@ const Navigation = () => {
             </ul>
           </nav>
         </div>
-        <SocialIcons  />
+        <SocialIcons />
       </Main>
       <MobNav className=" position-fixed">
         <div className=" h-100 d-flex justify-content-between align-items-center">
@@ -53,7 +56,7 @@ const Navigation = () => {
             <a href="#">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="https://www.linkedin.com/in/mejbahasan/" target="_blank" >
+            <a href="https://www.linkedin.com/in/mejbahasan/" target="_blank">
               <i className="fa-brands fa-linkedin"></i>
             </a>
             <a href="https://github.com/codermejba" target="_blank">
@@ -131,7 +134,6 @@ const MobNav = styled.header`
     white-space: nowrap;
   }
   .MobSocialIcons {
-   
     a {
       padding: 2px 8px;
       color: var(--logo-color);
